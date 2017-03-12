@@ -8,7 +8,7 @@ import com.asmi.lifecycle.Calcul;
 @Configuration
 public class AppConfig {
 	
-    @Bean
+    @Bean(initMethod="initMethod", destroyMethod="detroyMethod")
     public Calcul calcul() {
         return new Calcul();
     }

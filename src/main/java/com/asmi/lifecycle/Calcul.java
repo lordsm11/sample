@@ -31,4 +31,13 @@ public class Calcul implements InitializingBean,DisposableBean {
 	public void destroy() throws Exception {
 		System.out.println("DisposableBean : destroy");
 	}
+	
+    public void initMethod() {
+		System.out.println("init-metgo");
+    }
+
+    public void detroyMethod() {
+		System.out.println("destroy-method");
+    }
+
 }

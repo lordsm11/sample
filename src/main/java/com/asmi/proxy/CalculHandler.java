@@ -13,7 +13,7 @@ public class CalculHandler implements InvocationHandler{
 
 	@Override
 	public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
-        return method.invoke(impl,args)+"- reflection proxy";
+        return method.invoke(impl,args)+" - reflection proxy";
 	}
 
 }
